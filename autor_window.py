@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'autor_window.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Report_Auto_Generator(object):
+    def setupUi(self, Report_Auto_Generator):
+        Report_Auto_Generator.setObjectName("Report_Auto_Generator")
+        Report_Auto_Generator.resize(400, 300)
+        Report_Auto_Generator.setMinimumSize(QtCore.QSize(400, 300))
+        Report_Auto_Generator.setMaximumSize(QtCore.QSize(400, 300))
+        self.label_3 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_3.setGeometry(QtCore.QRect(220, 70, 121, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_2 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_2.setGeometry(QtCore.QRect(220, 120, 141, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_5 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_5.setGeometry(QtCore.QRect(60, 120, 141, 16))
+        self.label_5.setObjectName("label_5")
+        self.hrmass = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.hrmass.setGeometry(QtCore.QRect(60, 140, 113, 21))
+        self.hrmass.setObjectName("hrmass")
+        self.sname = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.sname.setGeometry(QtCore.QRect(60, 90, 113, 21))
+        self.sname.setObjectName("sname")
+        self.Report_path_chooser = QtWidgets.QToolButton(Report_Auto_Generator)
+        self.Report_path_chooser.setGeometry(QtCore.QRect(150, 40, 26, 20))
+        self.Report_path_chooser.setAutoRaise(False)
+        self.Report_path_chooser.setObjectName("Report_path_chooser")
+        self.label = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label.setGeometry(QtCore.QRect(60, 20, 121, 16))
+        self.label.setObjectName("label")
+        self.lrmass = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.lrmass.setGeometry(QtCore.QRect(220, 140, 113, 21))
+        self.lrmass.setObjectName("lrmass")
+        self.generatebin = QtWidgets.QPushButton(Report_Auto_Generator)
+        self.generatebin.setGeometry(QtCore.QRect(140, 220, 113, 32))
+        self.generatebin.setObjectName("generatebin")
+        self.onumber = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.onumber.setGeometry(QtCore.QRect(220, 90, 113, 21))
+        self.onumber.setObjectName("onumber")
+        self.label_4 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_4.setGeometry(QtCore.QRect(60, 70, 121, 16))
+        self.label_4.setObjectName("label_4")
+        self.Input_path = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.Input_path.setGeometry(QtCore.QRect(60, 40, 91, 21))
+        self.Input_path.setObjectName("Input_path")
+        self.Output_path = QtWidgets.QLineEdit(Report_Auto_Generator)
+        self.Output_path.setGeometry(QtCore.QRect(220, 40, 91, 21))
+        self.Output_path.setObjectName("Output_path")
+        self.Report_outputpath_chooser = QtWidgets.QToolButton(Report_Auto_Generator)
+        self.Report_outputpath_chooser.setGeometry(QtCore.QRect(310, 40, 26, 20))
+        self.Report_outputpath_chooser.setAutoRaise(False)
+        self.Report_outputpath_chooser.setObjectName("Report_outputpath_chooser")
+        self.label_6 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_6.setGeometry(QtCore.QRect(220, 20, 121, 16))
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(Report_Auto_Generator)
+        self.label_7.setGeometry(QtCore.QRect(110, 180, 71, 21))
+        self.label_7.setObjectName("label_7")
+        self.stautus = QtWidgets.QLabel(Report_Auto_Generator)
+        self.stautus.setGeometry(QtCore.QRect(180, 180, 211, 21))
+        self.stautus.setText("")
+        self.stautus.setObjectName("stautus")
+
+        self.retranslateUi(Report_Auto_Generator)
+        self.generatebin.clicked.connect(Report_Auto_Generator.generate_report)
+        self.Report_path_chooser.clicked.connect(Report_Auto_Generator.get_input_path)
+        self.Report_outputpath_chooser.clicked.connect(Report_Auto_Generator.get_output_path)
+        QtCore.QMetaObject.connectSlotsByName(Report_Auto_Generator)
+
+    def retranslateUi(self, Report_Auto_Generator):
+        _translate = QtCore.QCoreApplication.translate
+        Report_Auto_Generator.setWindowTitle(_translate("Report_Auto_Generator", "Auto_Report_Generator"))
+        self.label_3.setText(_translate("Report_Auto_Generator", "Order Number"))
+        self.label_2.setText(_translate("Report_Auto_Generator", "Light Chain Real Mass"))
+        self.label_5.setText(_translate("Report_Auto_Generator", "Heavy Chain Real Mass"))
+        self.Report_path_chooser.setText(_translate("Report_Auto_Generator", "..."))
+        self.label.setText(_translate("Report_Auto_Generator", "PEAKS Report Path"))
+        self.generatebin.setText(_translate("Report_Auto_Generator", "Generate"))
+        self.label_4.setText(_translate("Report_Auto_Generator", "Sample Name"))
+        self.Report_outputpath_chooser.setText(_translate("Report_Auto_Generator", "..."))
+        self.label_6.setText(_translate("Report_Auto_Generator", "Output File Path"))
+        self.label_7.setText(_translate("Report_Auto_Generator", "Status:"))
+        self.stautus.setText(_translate("Report_Auto_Generator", "Waiting for User to input..."))
+
